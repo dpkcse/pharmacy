@@ -143,10 +143,10 @@ app.get('/admin', function (req, res) {
   // *****************************************************
 
   var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'pharmacy'
+    host: 'db4free.net',
+    user: 'pharmecy',
+    password: '963214785',
+    database: 'pharmecy'
 });
 
 var totalSell = "select ROUND(SUM(Total_Payable),2) AS sells_count from bill_information where YEAR(Date) = YEAR(CURRENT_DATE()) AND MONTH(Date) = MONTH(CURRENT_DATE());";
