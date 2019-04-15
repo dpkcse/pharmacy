@@ -37,10 +37,10 @@ app.use(express.static('./public'));
 // typeahead
 
 var connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'pharmacy'
+  host: 'db4free.net',
+  user: 'pharmecy',
+  password: '963214785',
+  database: 'pharmecy'
 });
 
 connection.connect();
